@@ -1,0 +1,14 @@
+for d in *; do
+cd $d
+rm accepted_hits.bam
+rm deletions.bed
+rm insertions.bed
+rm junctions.bed
+rm -r logs
+rm prep_reads.info
+rm samtoolsSortN.bam
+rm unmapped.bam
+rename "_sorted_accepted_hits" "" *
+cd ..
+done
+
